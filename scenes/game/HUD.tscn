@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/game/HUD.gd" type="Script" id=1]
+
+[node name="HUD" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LifeBG" type="ColorRect" parent="."]
+margin_left = 64.0
+margin_top = 64.0
+margin_right = 108.0
+margin_bottom = 86.0
+color = Color( 0.372549, 0.164706, 0.117647, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Life" type="ColorRect" parent="."]
+margin_left = 66.0
+margin_top = 65.0
+margin_right = 106.0
+margin_bottom = 85.0
+color = Color( 0.682353, 0.192157, 0.0784314, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GuardBG" type="ColorRect" parent="."]
+margin_left = 64.0
+margin_top = 88.0
+margin_right = 108.0
+margin_bottom = 110.0
+color = Color( 0.137255, 0.32549, 0.137255, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Guard" type="ColorRect" parent="."]
+margin_left = 66.0
+margin_top = 89.0
+margin_right = 106.0
+margin_bottom = 109.0
+color = Color( 0.0705882, 0.545098, 0.0666667, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,2 +1,4 @@
 extends Node
-const GRAVITY := 12000.0
+const GRAVITY := 800
+
+onready var PLAYER = null

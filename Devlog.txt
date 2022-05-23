@@ -1,6 +1,8 @@
 -= Day 1 =-
 Decided on game idea.
 Set up github repo and Godot project.
+Worked quite a bit on setting up the basic character system that will be shared by the player and enemies.
+
 
 -= Day 2 =-
 
