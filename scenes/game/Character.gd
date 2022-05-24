@@ -24,6 +24,7 @@ var x_dir_mult := 0
 var movevec := Vector2.ZERO
 var pushvec := Vector2.ZERO
 
+var anim := "stand"
 
 export (float) var walk_speed := 200
 export (float) var walk_speed_guard := 75
@@ -31,7 +32,6 @@ export (float) var jump_speed := -800
 
 export (float) var life_max = 100.0
 export (float) var life_replenlish = 2.0
-
 
 export (float) var guard_damage_reduction = 0.7
 export (float) var guard_push_reduction = 0.4
@@ -51,20 +51,19 @@ var guard : float = guard_max
 
 var taking_input := true
 var guarding := false
-var anim_lock := false
+export (bool) var anim_lock := false
 
 var incoming_hitbox : Area2D = null
 
 func _prep_character_for_update(delta : float) -> void:
 	# Rest inputs
-	in_left 	= false
-	in_right 	= false
-	in_down 	= false
-	in_jump 	= false
-	in_attack 	= false
+#	in_left 	= false
+#	in_right 	= false
+#	in_down 	= false
+#	in_jump 	= false
+#	in_attack 	= false
 #	in_guard 	= false
 #	in_parry 	= false
-	
 	
 	# Replenish guard
 	if !guarding and guard < guard_max: guard += guard_replenlish * delta
@@ -73,7 +72,6 @@ func _prep_character_for_update(delta : float) -> void:
 	# Replenish life
 	if life < life_max: life += life_replenlish * delta
 	if life > life_max: life = life_max
-	
 	
 	if stun_clock > 0: stun_clock -= delta
 	if stun_clock < 0: stun_clock = 0
@@ -87,27 +85,6 @@ func _physics_process(delta):
 	_update_states(delta)
 	if incoming_hitbox: _react_to_hit(incoming_hitbox)
 	_move(delta)
-
-func _move(delta : float)-> void:
-	
-	var adj_speed = walk_speed
-	if guarding: adj_speed = walk_speed_guard
-	
-	movevec.x += x_dir_mult * adj_speed
-	
-	if !guarding and x_dir_mult: $Flipper.set_scale(Vector2(x_dir_mult, 1))
-	
-	if in_jump: jump_try_window = jump_fudge_time
-
-	if jump_try_window and is_on_floor():
-		jump_try_window = 0
-		movevec.y += jump_speed
-	
-	if pushvec:
-		var adj_push = pushvec * delta
-		movevec += adj_push
-		pushvec -= adj_push
-	movevec = move_and_slide(movevec, Vector2.UP)
 
 func _update_states(delta : float):
 	taking_input = !(
@@ -124,24 +101,56 @@ func _update_states(delta : float):
 		and is_on_floor())
 	
 	if !AP: return
-	var anim := "stand"
+	if anim_lock and AP.is_playing(): return
+	var new_anim := anim
 	
-	if stun_clock: anim = "stun"
-	elif taking_input and in_left or in_right:
-		if guarding: anim = "guard_walk"
-		else: anim = "walk"
-	elif guarding: anim = "guard"
+	if stun_clock: new_anim = "hurt"
+	elif !is_on_floor(): new_anim = "air"
+	elif taking_input and (in_left or in_right):
+		if guarding: new_anim = "guard_walk"
+		else: new_anim = "walk"
+	elif guarding: new_anim = "guard"
+	elif in_attack:
+		if x_dir_mult > -1: new_anim = "attack_fronthand"
+		if x_dir_mult < 0: new_anim = "attack_backhand"
+		print(x_dir_mult)
+	else: new_anim = "stand"
 	
-	if AP.current_animation != anim: AP.play(anim)
+	if anim != new_anim:
+		anim = new_anim
+		AP.play(anim, .2)
+#		print(anim)
+
+func _move(delta : float)-> void:
+	
+	if taking_input:
+		var adj_speed = walk_speed
+		if guarding: adj_speed = walk_speed_guard
+		
+		movevec.x += x_dir_mult * adj_speed
+	
+	if !guarding and x_dir_mult: $Flipper.set_scale(Vector2(x_dir_mult, 1))
+	
+	if in_jump: jump_try_window = jump_fudge_time
+
+	if jump_try_window and is_on_floor():
+		jump_try_window = 0
+		movevec.y += jump_speed
+	
+	if pushvec:
+		var adj_push = pushvec * delta
+		movevec += adj_push
+		pushvec -= adj_push
+	movevec = move_and_slide(movevec, Vector2.UP)
 
 func _react_to_hit(hit : Area2D):
 	
-	#Check for parry
-	var is_in_parry_window = hit.get("in_parry_window")
-	if is_in_parry_window and in_parry and taking_input:
-		# TODO Parry
-		_parry_feedback()
-		return
+#	#Check for parry
+#	var is_in_parry_window = hit.get("in_parry_window")
+#	if is_in_parry_window and in_parry and taking_input:
+#		# TODO Parry
+#		_parry_feedback()
+#		return
 
 	# Take damage
 	var incoming_damage = hit.get("damage")
@@ -153,7 +162,6 @@ func _react_to_hit(hit : Area2D):
 	elif hit.global_position.x > global_position.x and x_dir_mult > -1: guarded_hit = false
 	
 	if guarded_hit:
-		print(guard)
 		guard -= hit.get("guard_break")
 		if guard <= 0: _guard_break_feedback()
 		else: incoming_damage *= guard_damage_reduction
