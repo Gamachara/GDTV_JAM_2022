@@ -1,6 +1,11 @@
 class_name Character
 extends KinematicBody2D
 
+onready var AP = $AnimationPlayer
+
+export (Script) var controller = null
+#onready var controller = load(controller_path)
+
 # Inputs
 # These same variables are used by AI
 var in_left 	:= false
@@ -25,6 +30,8 @@ export (float) var walk_speed_guard := 75
 export (float) var jump_speed := -800
 
 export (float) var life_max = 100.0
+export (float) var life_replenlish = 2.0
+
 
 export (float) var guard_damage_reduction = 0.7
 export (float) var guard_push_reduction = 0.4
@@ -46,6 +53,8 @@ var taking_input := true
 var guarding := false
 var anim_lock := false
 
+var incoming_hitbox : Area2D = null
+
 func _prep_character_for_update(delta : float) -> void:
 	# Rest inputs
 	in_left 	= false
@@ -56,11 +65,15 @@ func _prep_character_for_update(delta : float) -> void:
 #	in_guard 	= false
 #	in_parry 	= false
 	
+	
 	# Replenish guard
 	if !guarding and guard < guard_max: guard += guard_replenlish * delta
-	
-	if life > life_max: life = life_max
 	if guard > guard_max: guard = guard_max
+	
+	# Replenish life
+	if life < life_max: life += life_replenlish * delta
+	if life > life_max: life = life_max
+	
 	
 	if stun_clock > 0: stun_clock -= delta
 	if stun_clock < 0: stun_clock = 0
@@ -70,16 +83,12 @@ func _prep_character_for_update(delta : float) -> void:
 
 func _physics_process(delta):
 	_prep_character_for_update(delta)
-	listen_for_ai()
+#	controller.update_behavior(self)
 	_update_states(delta)
+	if incoming_hitbox: _react_to_hit(incoming_hitbox)
 	_move(delta)
 
-func listen_for_ai() -> void:
-	pass
-
 func _move(delta : float)-> void:
-	
-	x_dir_mult = int(in_right) - int(in_left)
 	
 	var adj_speed = walk_speed
 	if guarding: adj_speed = walk_speed_guard
@@ -106,14 +115,26 @@ func _update_states(delta : float):
 		anim_lock or
 		stun_clock)
 	
+	if taking_input: x_dir_mult = int(in_right) - int(in_left)
+	
 	guarding = (
-		in_guard
+		taking_input
+		and in_guard
 		and guard
-#		and !anim_lock 
-		and !stun_clock 
 		and is_on_floor())
+	
+	if !AP: return
+	var anim := "stand"
+	
+	if stun_clock: anim = "stun"
+	elif taking_input and in_left or in_right:
+		if guarding: anim = "guard_walk"
+		else: anim = "walk"
+	elif guarding: anim = "guard"
+	
+	if AP.current_animation != anim: AP.play(anim)
 
-func _on_hit(hit : Area2D):
+func _react_to_hit(hit : Area2D):
 	
 	#Check for parry
 	var is_in_parry_window = hit.get("in_parry_window")
@@ -125,7 +146,13 @@ func _on_hit(hit : Area2D):
 	# Take damage
 	var incoming_damage = hit.get("damage")
 	
-	if guarding:
+	# Ignore guard if attacked from behind
+	# TODO fix this it's broken
+	var guarded_hit = guarding 
+	if hit.global_position.x < global_position.x and x_dir_mult < 1: guarded_hit = false
+	elif hit.global_position.x > global_position.x and x_dir_mult > -1: guarded_hit = false
+	
+	if guarded_hit:
 		print(guard)
 		guard -= hit.get("guard_break")
 		if guard <= 0: _guard_break_feedback()
@@ -151,6 +178,8 @@ func _on_hit(hit : Area2D):
 	if guarding: push *= guard_push_reduction
 	if hit.global_position.x > global_position.x: push *= -1
 	pushvec.x += push
+	
+	incoming_hitbox = null
 	
 func _guard_break_feedback() -> void:
 	pass

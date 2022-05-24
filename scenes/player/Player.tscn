@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://scenes/boxes/P_hurtbox.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/boxes/P_hitbox.tscn" type="PackedScene" id=2]
@@ -21,17 +21,368 @@
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 32.0
-height = 294.0
+height = 262.0
 
 [sub_resource type="CapsuleShape2D" id=11]
 radius = 280.0
 height = 160.0
 
+[sub_resource type="Animation" id=17]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 180.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Flipper/Node2D/Pelvis/Torso:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 180.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SWORD:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 156.747 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm:rotation_degrees")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 23.2519 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -46.8704 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SHIELD:rotation_degrees")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 124.984 ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SWORD:rotation_degrees")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -23.6185 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh:rotation_degrees")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 173.328 ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin/Sword_Foot:rotation_degrees")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin/Shield_Foot:rotation_degrees")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "air"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 180.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Flipper/Node2D/Pelvis/Torso:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 180.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SWORD:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 156.747 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm:rotation_degrees")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 23.2519 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -46.8704 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SHIELD:rotation_degrees")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 124.984 ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SWORD:rotation_degrees")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -23.6185 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh:rotation_degrees")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 173.328 ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin/Sword_Foot:rotation_degrees")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "air_attack"
+
 [sub_resource type="Animation" id=3]
 resource_name = "attack"
 
-[sub_resource type="Animation" id=4]
-resource_name = "attack_crit"
+[sub_resource type="Animation" id=12]
+resource_name = "death"
+
+[sub_resource type="Animation" id=15]
+resource_name = "duck"
+
+[sub_resource type="Animation" id=16]
+resource_name = "duck_attack"
 
 [sub_resource type="Animation" id=5]
 resource_name = "guard"
@@ -42,59 +393,270 @@ resource_name = "guard_walk"
 [sub_resource type="Animation" id=7]
 resource_name = "hurt"
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=19]
 resource_name = "stand"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Flipper/Node2D/Pelvis/Torso:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 180.0, 178.0, 180.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, -10.0, 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 23.2519, 30.0, 23.2519 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, -10.0, 0.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -46.8704, -50.0, -46.8704 ]
+}
 
 [sub_resource type="Animation" id=9]
 resource_name = "stunned"
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=18]
 resource_name = "walk"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 220.0, 128.6, 220.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Flipper/Node2D/Pelvis/Torso:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 180.0, 170.0, 180.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 10.0, -10.0, 10.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, -90.0, 0.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SWORD:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 156.747 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm:rotation_degrees")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0.001, 0.002, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 23.2519, 0.0, 40.0, 0.0 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -127.2, -85.0, -127.2 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SHIELD:rotation_degrees")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 124.984 ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SWORD:rotation_degrees")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -23.6185, 40.0, -23.6185 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh:rotation_degrees")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 190.0, 220.0, 190.0 ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 80.0, 0.0, 80.0 ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin/Sword_Foot:rotation_degrees")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 20.0, -40.0, 20.0 ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 90.0, 0.0, 90.0 ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin/Shield_Foot:rotation_degrees")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -42.9, -68.6, -42.9 ]
+}
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 3 )
 
 [node name="Bounds" type="CollisionShape2D" parent="."]
+visible = false
 shape = SubResource( 1 )
 
 [node name="Flipper" type="Node2D" parent="."]
 
 [node name="Node2D" type="Node2D" parent="Flipper"]
-position = Vector2( 119, 0 )
+position = Vector2( 118, 5 )
 scale = Vector2( 0.3, 0.3 )
-
-[node name="BACK_HAND_SWORD" type="Sprite" parent="Flipper/Node2D"]
-position = Vector2( -35, -9.99997 )
-scale = Vector2( -1, 1 )
-texture = ExtResource( 18 )
-
-[node name="Shield_upperarm" type="Sprite" parent="Flipper/Node2D"]
-position = Vector2( -278.5, -307.5 )
-rotation = 0.405822
-texture = ExtResource( 7 )
-
-[node name="BACK_HAND_SHIELD" type="Sprite" parent="Flipper/Node2D/Shield_upperarm"]
-position = Vector2( 10.5933, -186.859 )
-rotation = 0.142169
-texture = ExtResource( 6 )
-
-[node name="Shield_forearm" type="Sprite" parent="Flipper/Node2D/Shield_upperarm"]
-position = Vector2( 86.6668, 133.333 )
-rotation = -0.818042
-scale = Vector2( -1, 1 )
-texture = ExtResource( 4 )
-
-[node name="Shield_Thigh" type="Sprite" parent="Flipper/Node2D"]
-position = Vector2( -315, 120 )
-texture = ExtResource( 13 )
-
-[node name="Shield_Shin" type="Sprite" parent="Flipper/Node2D/Shield_Thigh"]
-position = Vector2( 0, 255 )
-texture = ExtResource( 15 )
-
-[node name="Shield_Foot" type="Sprite" parent="Flipper/Node2D/Shield_Thigh/Shield_Shin"]
-position = Vector2( 29.9999, 165 )
-texture = ExtResource( 11 )
 
 [node name="Pelvis" type="Sprite" parent="Flipper/Node2D"]
 position = Vector2( -383.5, -47.5 )
@@ -102,42 +664,105 @@ rotation = 3.14159
 scale = Vector2( 1, -1 )
 texture = ExtResource( 10 )
 
-[node name="Sword_Thigh" type="Sprite" parent="Flipper/Node2D"]
-position = Vector2( -450, 105 )
-rotation = 0.116455
-texture = ExtResource( 12 )
+[node name="Shield_Thigh" type="Sprite" parent="Flipper/Node2D/Pelvis"]
+show_behind_parent = true
+position = Vector2( -66.8332, 10.8336 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+texture = ExtResource( 13 )
+offset = Vector2( -8.33334, 130 )
 
-[node name="Sword_Shin" type="Sprite" parent="Flipper/Node2D/Sword_Thigh"]
-position = Vector2( 0, 265 )
-texture = ExtResource( 14 )
+[node name="Shield_Shin" type="Sprite" parent="Flipper/Node2D/Pelvis/Shield_Thigh"]
+position = Vector2( -6.66667, 270 )
+texture = ExtResource( 15 )
+offset = Vector2( 3.33334, 101.667 )
 
-[node name="Sword_Foot" type="Sprite" parent="Flipper/Node2D/Sword_Thigh/Sword_Shin"]
-position = Vector2( 20, 175 )
-texture = ExtResource( 16 )
+[node name="Shield_Foot" type="Sprite" parent="Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin"]
+position = Vector2( 13.3333, 233.333 )
+texture = ExtResource( 11 )
+offset = Vector2( 26.6666, 28.3333 )
 
-[node name="Torso" type="Sprite" parent="Flipper/Node2D"]
-position = Vector2( -403.5, -387.5 )
+[node name="Torso" type="Sprite" parent="Flipper/Node2D/Pelvis"]
+position = Vector2( -16.6715, -62.922 )
+rotation = 3.10669
+scale = Vector2( 1, -1 )
 texture = ExtResource( 9 )
+offset = Vector2( -33.7103, -277.454 )
 
-[node name="Sword_Upperarm" type="Sprite" parent="Flipper/Node2D/Torso"]
-position = Vector2( -140, 40.0001 )
+[node name="Sword_Upperarm" type="Sprite" parent="Flipper/Node2D/Pelvis/Torso"]
+position = Vector2( -149.678, -302.99 )
+rotation = -0.174533
+z_index = 2
 texture = ExtResource( 8 )
+offset = Vector2( -40.1667, 75.8334 )
 
-[node name="Sword_Forearm" type="Sprite" parent="Flipper/Node2D/Torso/Sword_Upperarm"]
-position = Vector2( -53.3334, 180 )
+[node name="Sword_Forearm" type="Sprite" parent="Flipper/Node2D/Pelvis/Torso/Sword_Upperarm"]
+position = Vector2( -86.6667, 180 )
+rotation = -0.174533
 texture = ExtResource( 4 )
+offset = Vector2( -10.1667, 69.1667 )
 
-[node name="FRONT_HAND_SWORD" type="Sprite" parent="Flipper/Node2D/Torso/Sword_Upperarm/Sword_Forearm"]
-position = Vector2( 146.667, 153.333 )
+[node name="FRONT_HAND_SWORD" type="Sprite" parent="Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm"]
+position = Vector2( -23.3333, 100 )
 texture = ExtResource( 5 )
+offset = Vector2( 170, 53.333 )
 
-[node name="FRONT_HAND_SHEILD" type="Sprite" parent="Flipper/Node2D"]
-position = Vector2( -570, 4.99998 )
-rotation = -0.405829
-scale = Vector2( -1, 1 )
+[node name="FRONT_HAND_SHEILD" type="Sprite" parent="Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm"]
+position = Vector2( -25.3571, 97.5553 )
+rotation = 2.73575
+scale = Vector2( 1, -1 )
 texture = ExtResource( 17 )
+offset = Vector2( 31.1665, 119.878 )
+
+[node name="Shield_upperarm" type="Sprite" parent="Flipper/Node2D/Pelvis/Torso"]
+show_behind_parent = true
+position = Vector2( 90.1627, -276.244 )
+rotation = 0.523599
+z_index = -1
+texture = ExtResource( 7 )
+offset = Vector2( 27.0655, 71.4639 )
+
+[node name="Shield_forearm" type="Sprite" parent="Flipper/Node2D/Pelvis/Torso/Shield_upperarm"]
+position = Vector2( 87.6674, 173.128 )
+rotation = -0.872665
+scale = Vector2( -1, 1 )
+texture = ExtResource( 4 )
+offset = Vector2( -5.49371, 62.7999 )
+
+[node name="BACK_HAND_SHIELD" type="Sprite" parent="Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm"]
+show_behind_parent = true
+position = Vector2( -31.2984, 152.117 )
+rotation = 2.18138
+scale = Vector2( 1, -1 )
+texture = ExtResource( 6 )
+offset = Vector2( -201.062, -327.076 )
+
+[node name="BACK_HAND_SWORD" type="Sprite" parent="Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm"]
+show_behind_parent = true
+position = Vector2( -20.8005, 151.165 )
+rotation = -0.412221
+texture = ExtResource( 18 )
+offset = Vector2( -176.362, 56.2027 )
+
+[node name="Sword_Thigh" type="Sprite" parent="Flipper/Node2D/Pelvis"]
+position = Vector2( 72.3848, -24.3403 )
+rotation = 3.02514
+scale = Vector2( 1, -1 )
+texture = ExtResource( 12 )
+offset = Vector2( 19.1865, 153.643 )
+
+[node name="Sword_Shin" type="Sprite" parent="Flipper/Node2D/Pelvis/Sword_Thigh"]
+position = Vector2( 30.3997, 278.184 )
+texture = ExtResource( 14 )
+offset = Vector2( 1.72481, 108.971 )
+
+[node name="Sword_Foot" type="Sprite" parent="Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin"]
+position = Vector2( 0.625416, 234.851 )
+texture = ExtResource( 16 )
+offset = Vector2( 25.7866, 37.8603 )
 
 [node name="P_Hitbox" parent="Flipper/Node2D" instance=ExtResource( 2 )]
+visible = false
 position = Vector2( 76.6667, -93.3333 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Flipper/Node2D/P_Hitbox"]
@@ -145,18 +770,26 @@ position = Vector2( -140, 30 )
 shape = SubResource( 11 )
 
 [node name="P_Hurtbox" parent="Flipper" instance=ExtResource( 1 )]
+visible = false
 
 [node name="Hurt" type="CollisionShape2D" parent="Flipper/P_Hurtbox"]
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "stand"
+reset_on_save = false
+anims/RESET = SubResource( 17 )
+anims/air = SubResource( 13 )
+anims/air_attack = SubResource( 14 )
 anims/attack = SubResource( 3 )
-anims/attack_crit = SubResource( 4 )
+anims/death = SubResource( 12 )
+anims/duck = SubResource( 15 )
+anims/duck_attack = SubResource( 16 )
 anims/guard = SubResource( 5 )
 anims/guard_walk = SubResource( 6 )
 anims/hurt = SubResource( 7 )
-anims/stand = SubResource( 8 )
+anims/stand = SubResource( 19 )
 anims/stunned = SubResource( 9 )
-anims/walk = SubResource( 10 )
+anims/walk = SubResource( 18 )
 
 [connection signal="area_entered" from="Flipper/P_Hurtbox" to="." method="_on_P_Hurtbox_area_entered"]

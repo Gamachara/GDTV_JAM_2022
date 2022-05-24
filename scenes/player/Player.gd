@@ -2,12 +2,13 @@ extends Character
 
 onready var hurtbox = $Flipper/P_Hurtbox
 
-onready var front_hand_sword = $Flipper/Node2D/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SWORD
-onready var front_hand_shield = $Flipper/Node2D/FRONT_HAND_SHEILD
-onready var back_hand_sword = $Flipper/Node2D/BACK_HAND_SWORD
-onready var back_hand_shield = $Flipper/Node2D/Shield_upperarm/BACK_HAND_SHIELD
+onready var front_hand_sword 	= $Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SWORD
+onready var front_hand_shield 	= $Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD
+onready var back_hand_sword 	= $Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SWORD
+onready var back_hand_shield 	= $Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SHIELD
 
 var xp :int = 0
+var xp_to_level :int = 100
 var level : int = 1
 
 func _ready():
@@ -59,4 +60,4 @@ func _take_input() -> void:
 	in_parry 	= Input.is_action_just_pressed('ui_guard')
 
 func _on_P_Hurtbox_area_entered(area):
-	_on_hit(area)
+	if !incoming_hitbox: incoming_hitbox = area
