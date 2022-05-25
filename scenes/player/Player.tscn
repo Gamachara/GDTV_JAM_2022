@@ -23,11 +23,11 @@
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 32.0
-height = 230.0
+height = 416.0
 
 [sub_resource type="CapsuleShape2D" id=11]
-radius = 280.0
-height = 160.0
+radius = 353.333
+height = 260.0
 
 [sub_resource type="Animation" id=17]
 length = 0.001
@@ -269,7 +269,7 @@ tracks/19/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 31.1665, 119.878 ) ]
+"values": [ Vector2( -100, 119.878 ) ]
 }
 tracks/20/type = "value"
 tracks/20/path = NodePath(".:anim_lock")
@@ -278,6 +278,246 @@ tracks/20/loop_wrap = true
 tracks/20/imported = false
 tracks/20/enabled = true
 tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh:offset")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 19.1865, 153.643 ) ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("Flipper/Node2D/Pelvis:position")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -383.5, -47.5 ) ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh:position")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -66.8332, 10.8336 ) ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -6.66653, 263.333 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("Flipper/Node2D/Pelvis/Torso:position")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -13.5, -45.8333 ) ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm:position")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -150, -323.333 ) ]
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm:position")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -80, 180 ) ]
+}
+tracks/28/type = "value"
+tracks/28/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SWORD:position")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -30, 166.667 ) ]
+}
+tracks/29/type = "value"
+tracks/29/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:position")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -150, 180 ) ]
+}
+tracks/30/type = "value"
+tracks/30/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm:position")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 96.6667, -296.667 ) ]
+}
+tracks/31/type = "value"
+tracks/31/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm:position")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 72.3038, 167.165 ) ]
+}
+tracks/32/type = "value"
+tracks/32/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SHIELD:position")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -8.45552, 149.184 ) ]
+}
+tracks/33/type = "value"
+tracks/33/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SWORD:position")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -42.2479, 160.706 ) ]
+}
+tracks/34/type = "value"
+tracks/34/path = NodePath("Flipper/Node2D/Pelvis/Torso/head:position")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -56.6666, -433.333 ) ]
+}
+tracks/35/type = "value"
+tracks/35/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh:position")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 67.7766, -32.6865 ) ]
+}
+tracks/36/type = "value"
+tracks/36/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin:position")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 18.0423, 286.698 ) ]
+}
+tracks/37/type = "value"
+tracks/37/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin/Sword_Foot:position")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3.58487, 222.702 ) ]
+}
+tracks/38/type = "value"
+tracks/38/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin/Shield_Foot:position")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 13.3333, 226.667 ) ]
+}
+tracks/39/type = "value"
+tracks/39/path = NodePath("Flipper/Hurtbox:monitorable")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/40/type = "value"
+tracks/40/path = NodePath("Flipper/Node2D/Hitbox:active")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
@@ -293,10 +533,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.0, 70.0 ]
+"values": [ 70.0 ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin/Shield_Foot:rotation_degrees")
@@ -305,10 +545,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.0, 70.0 ]
+"values": [ 70.0 ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh:rotation_degrees")
@@ -317,10 +557,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 173.328, 165.0 ]
+"values": [ 165.0 ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh:rotation_degrees")
@@ -329,10 +569,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 180.0, 165.0 ]
+"values": [ 165.0 ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("Flipper/Node2D/Pelvis/Torso/head:rotation_degrees")
@@ -341,10 +581,10 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.0, -15.0 ]
+"values": [ -15.0 ]
 }
 tracks/5/type = "value"
 tracks/5/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm:rotation_degrees")
@@ -353,10 +593,10 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.0, 10.0 ]
+"values": [ 10.0 ]
 }
 tracks/6/type = "value"
 tracks/6/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm:rotation_degrees")
@@ -365,10 +605,10 @@ tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 23.2519, 30.0 ]
+"values": [ 30.0 ]
 }
 tracks/7/type = "value"
 tracks/7/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm:rotation_degrees")
@@ -377,10 +617,10 @@ tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ -46.8704, -20.0 ]
+"values": [ -20.0 ]
 }
 tracks/8/type = "value"
 tracks/8/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SWORD:rotation_degrees")
@@ -389,10 +629,10 @@ tracks/8/loop_wrap = true
 tracks/8/imported = false
 tracks/8/enabled = true
 tracks/8/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ -23.6185, -50.0 ]
+"values": [ -50.0 ]
 }
 tracks/9/type = "value"
 tracks/9/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SWORD:rotation_degrees")
@@ -401,30 +641,78 @@ tracks/9/loop_wrap = true
 tracks/9/imported = false
 tracks/9/enabled = true
 tracks/9/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.0, 50.0 ]
+"values": [ 50.0 ]
 }
 tracks/10/type = "value"
-tracks/10/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:flip_h")
+tracks/10/path = NodePath(".:anim_lock")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/imported = false
 tracks/10/enabled = true
 tracks/10/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
 "update": 1,
-"values": [ false ]
+"values": [  ]
 }
 tracks/11/type = "value"
-tracks/11/path = NodePath(".:anim_lock")
+tracks/11/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:rotation_degrees")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/imported = false
 tracks/11/enabled = true
 tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 184.2 ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:flip_h")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:offset")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -150, 150 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Flipper/Node2D/Pelvis:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -383.5, -47.5 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Flipper/Node2D/Hitbox:active")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
@@ -435,43 +723,43 @@ tracks/11/keys = {
 resource_name = "attack_backhand"
 length = 0.5
 tracks/0/type = "value"
-tracks/0/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:flip_h")
+tracks/0/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm:rotation_degrees")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ false ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm:rotation_degrees")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ 23.2519, -125.7, 35.6 ]
 }
-tracks/2/type = "value"
-tracks/2/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm:rotation_degrees")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
+tracks/1/type = "value"
+tracks/1/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
 "times": PoolRealArray( 0, 0.2 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ -46.8704, -84.1 ]
 }
+tracks/2/type = "value"
+tracks/2/path = NodePath("Flipper/Node2D/Pelvis/Torso:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 180.0, 200.0, 157.5 ]
+}
 tracks/3/type = "value"
-tracks/3/path = NodePath("Flipper/Node2D/Pelvis/Torso:rotation_degrees")
+tracks/3/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SWORD:rotation_degrees")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
@@ -480,10 +768,10 @@ tracks/3/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 180.0, 200.0, 157.5 ]
+"values": [ -23.6185, 50.9, -60.8 ]
 }
 tracks/4/type = "value"
-tracks/4/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SWORD:rotation_degrees")
+tracks/4/path = NodePath("Flipper/Node2D/Pelvis/Torso/head:rotation_degrees")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -492,22 +780,22 @@ tracks/4/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ -23.6185, 50.9, -60.8 ]
+"values": [ 0.0, -45.0, 20.0 ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("Flipper/Node2D/Pelvis/Torso/head:rotation_degrees")
+tracks/5/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm:rotation_degrees")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ 0.0, -45.0, 20.0 ]
+"values": [ 0.0, 33.8 ]
 }
 tracks/6/type = "value"
-tracks/6/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm:rotation_degrees")
+tracks/6/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm:rotation_degrees")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
@@ -516,34 +804,34 @@ tracks/6/keys = {
 "times": PoolRealArray( 0, 0.4 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ 0.0, 33.8 ]
+"values": [ 0.0, -90.0 ]
 }
 tracks/7/type = "value"
-tracks/7/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm:rotation_degrees")
+tracks/7/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:rotation_degrees")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"times": PoolRealArray( 0, 0.4 ),
+"times": PoolRealArray( 0, 0.2 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ 0.0, -90.0 ]
+"values": [ 173.0, 190.5 ]
 }
 tracks/8/type = "value"
-tracks/8/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:rotation_degrees")
+tracks/8/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh:rotation_degrees")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/imported = false
 tracks/8/enabled = true
 tracks/8/keys = {
-"times": PoolRealArray( 0, 0.2 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 156.747, 190.5 ]
+"values": [ 180.0, 190.0, 170.0 ]
 }
 tracks/9/type = "value"
-tracks/9/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh:rotation_degrees")
+tracks/9/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh:rotation_degrees")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/imported = false
@@ -552,46 +840,46 @@ tracks/9/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 180.0, 190.0, 170.0 ]
+"values": [ 173.328, 183.0, 160.0 ]
 }
 tracks/10/type = "value"
-tracks/10/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh:rotation_degrees")
+tracks/10/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin:rotation_degrees")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/imported = false
 tracks/10/enabled = true
 tracks/10/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ 173.328, 183.0, 160.0 ]
-}
-tracks/11/type = "value"
-tracks/11/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin:rotation_degrees")
-tracks/11/interp = 1
-tracks/11/loop_wrap = true
-tracks/11/imported = false
-tracks/11/enabled = true
-tracks/11/keys = {
 "times": PoolRealArray( 0, 0.2 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0.0, 33.8 ]
 }
-tracks/12/type = "value"
-tracks/12/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin/Shield_Foot:rotation_degrees")
-tracks/12/interp = 1
-tracks/12/loop_wrap = true
-tracks/12/imported = false
-tracks/12/enabled = true
-tracks/12/keys = {
+tracks/11/type = "value"
+tracks/11/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin/Shield_Foot:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ 0.0, -22.5, -43.0 ]
 }
+tracks/12/type = "value"
+tracks/12/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin:rotation_degrees")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 33.8 ]
+}
 tracks/13/type = "value"
-tracks/13/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin:rotation_degrees")
+tracks/13/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin/Sword_Foot:rotation_degrees")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/imported = false
@@ -600,22 +888,22 @@ tracks/13/keys = {
 "times": PoolRealArray( 0, 0.2 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ 0.0, 33.8 ]
+"values": [ 0.0, -56.2 ]
 }
 tracks/14/type = "value"
-tracks/14/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin/Sword_Foot:rotation_degrees")
+tracks/14/path = NodePath(".:anim_lock")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/imported = false
 tracks/14/enabled = true
 tracks/14/keys = {
-"times": PoolRealArray( 0, 0.2 ),
+"times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ 0.0, -56.2 ]
+"update": 1,
+"values": [ true, false ]
 }
 tracks/15/type = "value"
-tracks/15/path = NodePath(".:anim_lock")
+tracks/15/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:flip_h")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/imported = false
@@ -624,26 +912,50 @@ tracks/15/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ true ]
+"values": [ false ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Flipper/Node2D/Pelvis:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -383.5, -47.5 ), Vector2( -420, -50 ), Vector2( -213.333, -30 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Flipper/Node2D/Hitbox:active")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
 }
 
 [sub_resource type="Animation" id=20]
 resource_name = "attack_fronthand"
 length = 0.5
 tracks/0/type = "value"
-tracks/0/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:flip_h")
+tracks/0/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm:rotation_degrees")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ false ]
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 23.2519, -1.5, 73.0 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm:rotation_degrees")
+tracks/1/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm:rotation_degrees")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -652,10 +964,10 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 23.2519, -1.5, 73.0 ]
+"values": [ -46.8704, -22.1, -117.5 ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm:rotation_degrees")
+tracks/2/path = NodePath("Flipper/Node2D/Pelvis/Torso:rotation_degrees")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -664,34 +976,34 @@ tracks/2/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ -46.8704, -22.1, -117.5 ]
+"values": [ 180.0, 200.0, 157.5 ]
 }
 tracks/3/type = "value"
-tracks/3/path = NodePath("Flipper/Node2D/Pelvis/Torso:rotation_degrees")
+tracks/3/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SWORD:rotation_degrees")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ 180.0, 200.0, 157.5 ]
-}
-tracks/4/type = "value"
-tracks/4/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SWORD:rotation_degrees")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ -23.6185 ]
 }
+tracks/4/type = "value"
+tracks/4/path = NodePath("Flipper/Node2D/Pelvis/Torso/head:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, -45.0, 20.0 ]
+}
 tracks/5/type = "value"
-tracks/5/path = NodePath("Flipper/Node2D/Pelvis/Torso/head:rotation_degrees")
+tracks/5/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm:rotation_degrees")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
@@ -700,10 +1012,10 @@ tracks/5/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, -45.0, 20.0 ]
+"values": [ 0.0, -151.8, -74.1 ]
 }
 tracks/6/type = "value"
-tracks/6/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm:rotation_degrees")
+tracks/6/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm:rotation_degrees")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
@@ -712,34 +1024,34 @@ tracks/6/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, -151.8, -74.1 ]
+"values": [ 0.0, -90.0, 22.5 ]
 }
 tracks/7/type = "value"
-tracks/7/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm:rotation_degrees")
+tracks/7/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:rotation_degrees")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ 0.0, -90.0, 22.5 ]
-}
-tracks/8/type = "value"
-tracks/8/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:rotation_degrees")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/keys = {
 "times": PoolRealArray( 0, 0.2 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 156.747, 190.5 ]
 }
+tracks/8/type = "value"
+tracks/8/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh:rotation_degrees")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 180.0, 190.0, 170.0 ]
+}
 tracks/9/type = "value"
-tracks/9/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh:rotation_degrees")
+tracks/9/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh:rotation_degrees")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/imported = false
@@ -748,46 +1060,46 @@ tracks/9/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 180.0, 190.0, 170.0 ]
+"values": [ 173.328, 183.0, 160.0 ]
 }
 tracks/10/type = "value"
-tracks/10/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh:rotation_degrees")
+tracks/10/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin:rotation_degrees")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/imported = false
 tracks/10/enabled = true
 tracks/10/keys = {
-"times": PoolRealArray( 0, 0.2, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ 173.328, 183.0, 160.0 ]
-}
-tracks/11/type = "value"
-tracks/11/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin:rotation_degrees")
-tracks/11/interp = 1
-tracks/11/loop_wrap = true
-tracks/11/imported = false
-tracks/11/enabled = true
-tracks/11/keys = {
 "times": PoolRealArray( 0, 0.2 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0.0, 33.8 ]
 }
-tracks/12/type = "value"
-tracks/12/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin/Shield_Foot:rotation_degrees")
-tracks/12/interp = 1
-tracks/12/loop_wrap = true
-tracks/12/imported = false
-tracks/12/enabled = true
-tracks/12/keys = {
+tracks/11/type = "value"
+tracks/11/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin/Shield_Foot:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
 "values": [ 0.0, -22.5, -43.0 ]
 }
+tracks/12/type = "value"
+tracks/12/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin:rotation_degrees")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 33.8 ]
+}
 tracks/13/type = "value"
-tracks/13/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin:rotation_degrees")
+tracks/13/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin/Sword_Foot:rotation_degrees")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/imported = false
@@ -796,34 +1108,34 @@ tracks/13/keys = {
 "times": PoolRealArray( 0, 0.2 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ 0.0, 33.8 ]
+"values": [ 0.0, -56.2 ]
 }
 tracks/14/type = "value"
-tracks/14/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin/Sword_Foot:rotation_degrees")
+tracks/14/path = NodePath(".:anim_lock")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/imported = false
 tracks/14/enabled = true
 tracks/14/keys = {
-"times": PoolRealArray( 0, 0.2 ),
+"times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ 0.0, -56.2 ]
+"update": 1,
+"values": [ true, false ]
 }
 tracks/15/type = "value"
-tracks/15/path = NodePath(".:anim_lock")
+tracks/15/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SWORD:rotation_degrees")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/imported = false
 tracks/15/enabled = true
 tracks/15/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ true ]
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, -11.2, 78.8 ]
 }
 tracks/16/type = "value"
-tracks/16/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SWORD:rotation_degrees")
+tracks/16/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SHIELD:rotation_degrees")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/imported = false
@@ -832,25 +1144,49 @@ tracks/16/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, -11.2, 78.8 ]
+"values": [ 149.8, 159.3, 72.4 ]
 }
 tracks/17/type = "value"
-tracks/17/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SHIELD:rotation_degrees")
+tracks/17/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:offset")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/imported = false
 tracks/17/enabled = true
 tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -150, 150 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Flipper/Node2D/Pelvis:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 149.8, 159.3, 72.4 ]
+"values": [ Vector2( -383.5, -47.5 ), Vector2( -420, -53.3333 ), Vector2( -220, -26.6667 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("Flipper/Node2D/Hitbox:active")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false ]
 }
 
 [sub_resource type="Animation" id=12]
 resource_name = "death"
 tracks/0/type = "value"
-tracks/0/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:flip_h")
+tracks/0/path = NodePath(".:anim_lock")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -862,12 +1198,420 @@ tracks/0/keys = {
 "values": [ false ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath(".:anim_lock")
+tracks/1/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:flip_h")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Flipper/Node2D/Pelvis:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -393.333, 376.667 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Flipper/Node2D/Pelvis:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 180.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -280, 43.3333 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -87.7 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -20.0523, 416.197 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin/Shield_Foot:rotation_degrees")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 90.0 ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Flipper/Node2D/Pelvis/Torso:rotation_degrees")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 270.0 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Flipper/Node2D/Pelvis/Torso:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 120, -36.6668 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -23.7 ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -110, -246.666 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 22.5 ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -98.1798, 215.367 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SWORD:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 34.8952, 244.118 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SWORD:rotation_degrees")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 90.0 ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:rotation_degrees")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 179.2 ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -154.867, 259.079 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm:rotation_degrees")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 12.4 ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -70.0001, -73.333 ) ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm:rotation_degrees")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -10.0 ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm:position")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 86.4922, 298.597 ) ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SHIELD:position")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -70.8105, 337.068 ) ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SHIELD:rotation_degrees")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.9 ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SWORD:rotation_degrees")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -85.7 ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SWORD:position")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -61.944, 139.656 ) ]
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("Flipper/Node2D/Pelvis/Torso/head:rotation_degrees")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -90.0 ]
+}
+tracks/28/type = "value"
+tracks/28/path = NodePath("Flipper/Node2D/Pelvis/Torso/head:position")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -80.0002, -556.666 ) ]
+}
+tracks/29/type = "value"
+tracks/29/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh:position")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 252.314, 70.1799 ) ]
+}
+tracks/30/type = "value"
+tracks/30/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh:rotation_degrees")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 264.5 ]
+}
+tracks/31/type = "value"
+tracks/31/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin:rotation_degrees")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -10.0 ]
+}
+tracks/32/type = "value"
+tracks/32/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin:position")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 14.4816, 322.41 ) ]
+}
+tracks/33/type = "value"
+tracks/33/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin/Sword_Foot:rotation_degrees")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 65.0 ]
+}
+tracks/34/type = "value"
+tracks/34/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin/Sword_Foot:position")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 74.0145, -218.199 ) ]
+}
+tracks/35/type = "value"
+tracks/35/path = NodePath("Flipper/Node2D/Hitbox:active")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
@@ -877,24 +1621,12 @@ tracks/1/keys = {
 [sub_resource type="Animation" id=15]
 resource_name = "duck"
 tracks/0/type = "value"
-tracks/0/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:flip_h")
+tracks/0/path = NodePath(".:anim_lock")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ false ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath(".:anim_lock")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
@@ -904,24 +1636,12 @@ tracks/1/keys = {
 [sub_resource type="Animation" id=16]
 resource_name = "duck_attack"
 tracks/0/type = "value"
-tracks/0/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:flip_h")
+tracks/0/path = NodePath(".:anim_lock")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ false ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath(".:anim_lock")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
@@ -937,10 +1657,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 23.2519, 40.0 ]
+"values": [ 40.0 ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm:rotation_degrees")
@@ -949,10 +1669,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ -46.8704, -150.0 ]
+"values": [ -150.0 ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SHIELD:rotation_degrees")
@@ -961,10 +1681,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 124.984, 80.0 ]
+"values": [ 80.0 ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm:rotation_degrees")
@@ -973,10 +1693,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.0, -90.0 ]
+"values": [ -90.0 ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm:rotation_degrees")
@@ -985,10 +1705,10 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 0.5, 1 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.0, -50.0, -60.0 ]
+"values": [ -60.0 ]
 }
 tracks/5/type = "value"
 tracks/5/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:rotation_degrees")
@@ -997,54 +1717,102 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 156.747, 315.0 ]
+"values": [ 315.0 ]
 }
 tracks/6/type = "value"
-tracks/6/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:flip_h")
+tracks/6/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:offset")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"times": PoolRealArray( 0, 0.3 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 1,
-"values": [ false, true ]
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
 }
 tracks/7/type = "value"
-tracks/7/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:offset")
+tracks/7/path = NodePath("Flipper/Node2D/Pelvis/Torso/head:rotation_degrees")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 31.1665, 119.878 ), Vector2( -100, 150 ) ]
+"values": [ 30.0 ]
 }
 tracks/8/type = "value"
-tracks/8/path = NodePath("Flipper/Node2D/Pelvis/Torso/head:rotation_degrees")
+tracks/8/path = NodePath(".:anim_lock")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/imported = false
 tracks/8/enabled = true
 tracks/8/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ 0.0, 30.0 ]
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 1,
+"values": [  ]
 }
 tracks/9/type = "value"
-tracks/9/path = NodePath(".:anim_lock")
+tracks/9/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:flip_h")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/imported = false
 tracks/9/enabled = true
 tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -66.8332, 10.8336 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -84.0573, 156.131 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("Flipper/Node2D/Pelvis:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -383.5, -47.5 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("Flipper/Node2D/Hitbox:active")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
@@ -1056,19 +1824,19 @@ resource_name = "guard_walk"
 length = 2.0
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:flip_h")
+tracks/0/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm:rotation_degrees")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ true ]
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ -90.0, -112.5, -90.0 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm:rotation_degrees")
+tracks/1/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm:rotation_degrees")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -1077,34 +1845,34 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ -90.0, -112.5, -90.0 ]
+"values": [ -60.0, -26.3, -60.0 ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm:rotation_degrees")
+tracks/2/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SWORD:rotation_degrees")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 1, 2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ -60.0, -26.3, -60.0 ]
-}
-tracks/3/type = "value"
-tracks/3/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SWORD:rotation_degrees")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ 0.0 ]
 }
+tracks/3/type = "value"
+tracks/3/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 315.0, 329.3, 315.0 ]
+}
 tracks/4/type = "value"
-tracks/4/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:rotation_degrees")
+tracks/4/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm:rotation_degrees")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/imported = false
@@ -1113,10 +1881,10 @@ tracks/4/keys = {
 "times": PoolRealArray( 0, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 315.0, 329.3, 315.0 ]
+"values": [ 40.0, 2.8, 40.0 ]
 }
 tracks/5/type = "value"
-tracks/5/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm:rotation_degrees")
+tracks/5/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm:rotation_degrees")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/imported = false
@@ -1125,10 +1893,10 @@ tracks/5/keys = {
 "times": PoolRealArray( 0, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 40.0, 2.8, 40.0 ]
+"values": [ -150.0, -174.8, -150.0 ]
 }
 tracks/6/type = "value"
-tracks/6/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm:rotation_degrees")
+tracks/6/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SHIELD:rotation_degrees")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/imported = false
@@ -1137,10 +1905,10 @@ tracks/6/keys = {
 "times": PoolRealArray( 0, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ -150.0, -174.8, -150.0 ]
+"values": [ 80.0, 30.4, 80.0 ]
 }
 tracks/7/type = "value"
-tracks/7/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SHIELD:rotation_degrees")
+tracks/7/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SWORD:rotation_degrees")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/imported = false
@@ -1149,10 +1917,10 @@ tracks/7/keys = {
 "times": PoolRealArray( 0, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 80.0, 30.4, 80.0 ]
+"values": [ -23.6185, -60.9, -23.6185 ]
 }
 tracks/8/type = "value"
-tracks/8/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SWORD:rotation_degrees")
+tracks/8/path = NodePath("Flipper/Node2D/Pelvis/Torso/head:rotation_degrees")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/imported = false
@@ -1161,10 +1929,10 @@ tracks/8/keys = {
 "times": PoolRealArray( 0, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ -23.6185, -60.9, -23.6185 ]
+"values": [ 30.0, -15.0, 30.0 ]
 }
 tracks/9/type = "value"
-tracks/9/path = NodePath("Flipper/Node2D/Pelvis/Torso/head:rotation_degrees")
+tracks/9/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh:rotation_degrees")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/imported = false
@@ -1173,10 +1941,10 @@ tracks/9/keys = {
 "times": PoolRealArray( 0, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 30.0, -15.0, 30.0 ]
+"values": [ 173.328, 221.8, 173.328 ]
 }
 tracks/10/type = "value"
-tracks/10/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh:rotation_degrees")
+tracks/10/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin:rotation_degrees")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/imported = false
@@ -1185,10 +1953,10 @@ tracks/10/keys = {
 "times": PoolRealArray( 0, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 173.328, 221.8, 173.328 ]
+"values": [ 0.0, 56.3, 0.0 ]
 }
 tracks/11/type = "value"
-tracks/11/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin:rotation_degrees")
+tracks/11/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin/Sword_Foot:rotation_degrees")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/imported = false
@@ -1197,10 +1965,10 @@ tracks/11/keys = {
 "times": PoolRealArray( 0, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, 56.3, 0.0 ]
+"values": [ 0.0, 45.0, 0.0 ]
 }
 tracks/12/type = "value"
-tracks/12/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin/Sword_Foot:rotation_degrees")
+tracks/12/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh:rotation_degrees")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/imported = false
@@ -1209,10 +1977,10 @@ tracks/12/keys = {
 "times": PoolRealArray( 0, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 0.0, 45.0, 0.0 ]
+"values": [ 217.2, 165.1, 217.2 ]
 }
 tracks/13/type = "value"
-tracks/13/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh:rotation_degrees")
+tracks/13/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin:rotation_degrees")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/imported = false
@@ -1221,10 +1989,10 @@ tracks/13/keys = {
 "times": PoolRealArray( 0, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 217.2, 165.1, 217.2 ]
+"values": [ 78.8, 22.5, 78.8 ]
 }
 tracks/14/type = "value"
-tracks/14/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin:rotation_degrees")
+tracks/14/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin/Shield_Foot:rotation_degrees")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/imported = false
@@ -1233,10 +2001,10 @@ tracks/14/keys = {
 "times": PoolRealArray( 0, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 78.8, 22.5, 78.8 ]
+"values": [ -67.5, -11.2, -67.5 ]
 }
 tracks/15/type = "value"
-tracks/15/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin/Shield_Foot:rotation_degrees")
+tracks/15/path = NodePath("Flipper/Node2D/Pelvis/Torso:rotation_degrees")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/imported = false
@@ -1245,27 +2013,75 @@ tracks/15/keys = {
 "times": PoolRealArray( 0, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ -67.5, -11.2, -67.5 ]
+"values": [ 180.0, 166.3, 180.0 ]
 }
 tracks/16/type = "value"
-tracks/16/path = NodePath("Flipper/Node2D/Pelvis/Torso:rotation_degrees")
+tracks/16/path = NodePath(".:anim_lock")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/imported = false
 tracks/16/enabled = true
 tracks/16/keys = {
-"times": PoolRealArray( 0, 1, 2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ 180.0, 166.3, 180.0 ]
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
 }
 tracks/17/type = "value"
-tracks/17/path = NodePath(".:anim_lock")
+tracks/17/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:flip_h")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/imported = false
 tracks/17/enabled = true
 tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:offset")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:position")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -118.818, 163.005 ) ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("Flipper/Node2D/Pelvis:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -383.5, -47.5 ) ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("Flipper/Node2D/Hitbox:active")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
@@ -1281,10 +2097,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ false, true ]
+"values": [ false ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Flipper/Node2D/Pelvis/Torso/head:rotation_degrees")
@@ -1293,10 +2109,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.0, -45.0 ]
+"values": [ -45.0 ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("Flipper/Node2D/Pelvis/Torso:rotation_degrees")
@@ -1305,10 +2121,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 180.0, 191.3 ]
+"values": [ 191.3 ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm:rotation_degrees")
@@ -1317,10 +2133,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 0.0, -70.0 ]
+"values": [ -70.0 ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm:rotation_degrees")
@@ -1329,10 +2145,10 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 23.2519, -13.9 ]
+"values": [ -13.9 ]
 }
 tracks/5/type = "value"
 tracks/5/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm:rotation_degrees")
@@ -1341,10 +2157,10 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ -46.8704, -46.9 ]
+"values": [ -46.9 ]
 }
 tracks/6/type = "value"
 tracks/6/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm:rotation_degrees")
@@ -1353,7 +2169,7 @@ tracks/6/loop_wrap = true
 tracks/6/imported = false
 tracks/6/enabled = true
 tracks/6/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 0.1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0.0, -22.5 ]
@@ -1365,7 +2181,7 @@ tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 0.1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ -23.6185, -23.6 ]
@@ -1377,7 +2193,7 @@ tracks/8/loop_wrap = true
 tracks/8/imported = false
 tracks/8/enabled = true
 tracks/8/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 0.1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 124.984, 102.4 ]
@@ -1389,7 +2205,7 @@ tracks/9/loop_wrap = true
 tracks/9/imported = false
 tracks/9/enabled = true
 tracks/9/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 0.1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0.0, 45.0 ]
@@ -1401,10 +2217,10 @@ tracks/10/loop_wrap = true
 tracks/10/imported = false
 tracks/10/enabled = true
 tracks/10/keys = {
-"times": PoolRealArray( 0, 1 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ 156.747, 257.4 ]
+"values": [ 257.4 ]
 }
 tracks/11/type = "value"
 tracks/11/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh:rotation_degrees")
@@ -1413,7 +2229,7 @@ tracks/11/loop_wrap = true
 tracks/11/imported = false
 tracks/11/enabled = true
 tracks/11/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 0.1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 180.0, 204.8 ]
@@ -1425,7 +2241,7 @@ tracks/12/loop_wrap = true
 tracks/12/imported = false
 tracks/12/enabled = true
 tracks/12/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 0.1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 173.328, 195.8 ]
@@ -1437,7 +2253,7 @@ tracks/13/loop_wrap = true
 tracks/13/imported = false
 tracks/13/enabled = true
 tracks/13/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 0.1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0.0, 45.0 ]
@@ -1449,7 +2265,7 @@ tracks/14/loop_wrap = true
 tracks/14/imported = false
 tracks/14/enabled = true
 tracks/14/keys = {
-"times": PoolRealArray( 0, 1 ),
+"times": PoolRealArray( 0, 0.1 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ 0.0, 33.8 ]
@@ -1464,7 +2280,43 @@ tracks/15/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ true ]
+"values": [ false ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:offset")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, -100 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("Flipper/Node2D/Pelvis:position")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -383.5, -47.5 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Flipper/Node2D/Hitbox:active")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
 }
 
 [sub_resource type="Animation" id=19]
@@ -1661,11 +2513,11 @@ tracks/15/keys = {
 "times": PoolRealArray( 0, 1, 2 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 156.747, 190.0, 156.747 ]
+"values": [ 173.0, 190.0, 173.0 ]
 }
 tracks/16/type = "value"
-tracks/16/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:flip_h")
-tracks/16/interp = 0
+tracks/16/path = NodePath(".:anim_lock")
+tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/imported = false
 tracks/16/enabled = true
@@ -1676,12 +2528,72 @@ tracks/16/keys = {
 "values": [ false ]
 }
 tracks/17/type = "value"
-tracks/17/path = NodePath(".:anim_lock")
+tracks/17/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh:offset")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/imported = false
 tracks/17/enabled = true
 tracks/17/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 19.1865, 153.643 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:offset")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -100, 150 ), Vector2( -100, 150 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:flip_h")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("Flipper/Node2D/Pelvis:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -383.5, -47.5 ) ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh:position")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -66.8332, 10.8336 ) ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("Flipper/Node2D/Hitbox:active")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
@@ -1701,7 +2613,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 220.0, 128.6, 220.0 ]
+"values": [ 180.0, 128.6, 220.0 ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Flipper/Node2D/Pelvis/Torso:rotation_degrees")
@@ -1785,7 +2697,7 @@ tracks/7/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ -127.2, -85.0, -127.2 ]
+"values": [ 0.0, -85.0, -127.2 ]
 }
 tracks/8/type = "value"
 tracks/8/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SHIELD:rotation_degrees")
@@ -1809,7 +2721,7 @@ tracks/9/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ -23.6185, 40.0, -23.6185 ]
+"values": [ 13.6, 40.0, -23.6185 ]
 }
 tracks/10/type = "value"
 tracks/10/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh:rotation_degrees")
@@ -1821,7 +2733,7 @@ tracks/10/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 190.0, 220.0, 190.0 ]
+"values": [ 180.0, 220.0, 190.0 ]
 }
 tracks/11/type = "value"
 tracks/11/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin:rotation_degrees")
@@ -1833,7 +2745,7 @@ tracks/11/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 80.0, 0.0, 80.0 ]
+"values": [ 0.0, 0.0, 80.0 ]
 }
 tracks/12/type = "value"
 tracks/12/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin/Sword_Foot:rotation_degrees")
@@ -1845,7 +2757,7 @@ tracks/12/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 20.0, -40.0, 20.0 ]
+"values": [ 0.0, -40.0, 20.0 ]
 }
 tracks/13/type = "value"
 tracks/13/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin:rotation_degrees")
@@ -1857,7 +2769,7 @@ tracks/13/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ 90.0, 0.0, 90.0 ]
+"values": [ 0.0, 0.0, 90.0 ]
 }
 tracks/14/type = "value"
 tracks/14/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin/Shield_Foot:rotation_degrees")
@@ -1869,7 +2781,7 @@ tracks/14/keys = {
 "times": PoolRealArray( 0, 0.5, 1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ -42.9, -68.6, -42.9 ]
+"values": [ 0.0, -68.6, -42.9 ]
 }
 tracks/15/type = "value"
 tracks/15/path = NodePath("Flipper/Node2D/Pelvis/Torso/head:rotation_degrees")
@@ -1884,7 +2796,7 @@ tracks/15/keys = {
 "values": [ 0.0, 10.0, 0.0 ]
 }
 tracks/16/type = "value"
-tracks/16/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:flip_h")
+tracks/16/path = NodePath(".:anim_lock")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/imported = false
@@ -1896,12 +2808,240 @@ tracks/16/keys = {
 "values": [ false ]
 }
 tracks/17/type = "value"
-tracks/17/path = NodePath(".:anim_lock")
+tracks/17/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:offset")
 tracks/17/interp = 1
 tracks/17/loop_wrap = true
 tracks/17/imported = false
 tracks/17/enabled = true
 tracks/17/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( -150, 150 ), Vector2( -100, -100 ), Vector2( -150, 150 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:flip_h")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("Flipper/Node2D/Pelvis/Torso:position")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -20.1667, -45.8333 ) ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("Flipper/Node2D/Pelvis/Torso/head:position")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -46.6667, -426.667 ) ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin:position")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0.000137329, 266.666 ) ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin/Shield_Foot:position")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 13.3333, 226.667 ) ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm:position")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -146.667, -323.333 ) ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -78.4202, 169.526 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SWORD:position")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -24.1606, 170.113 ) ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD:position")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -181.005, 181.782 ) ]
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm:position")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 86.6667, -293.333 ) ]
+}
+tracks/28/type = "value"
+tracks/28/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm:position")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 66.6667, 183.333 ) ]
+}
+tracks/29/type = "value"
+tracks/29/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SHIELD:position")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -12.6844, 137.614 ) ]
+}
+tracks/30/type = "value"
+tracks/30/path = NodePath("Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SWORD:position")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -40.6915, 168.052 ) ]
+}
+tracks/31/type = "value"
+tracks/31/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh:position")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 73.1667, -15.8333 ) ]
+}
+tracks/32/type = "value"
+tracks/32/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin:position")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -3.8147e-06, 270 ) ]
+}
+tracks/33/type = "value"
+tracks/33/path = NodePath("Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin/Sword_Foot:position")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3.33334, 243.333 ) ]
+}
+tracks/34/type = "value"
+tracks/34/path = NodePath("Flipper/Node2D/Pelvis:position")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -383.5, -47.5 ) ]
+}
+tracks/35/type = "value"
+tracks/35/path = NodePath("Flipper/Node2D/Pelvis/Shield_Thigh:position")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -66.8332, 10.8336 ) ]
+}
+tracks/36/type = "value"
+tracks/36/path = NodePath("Flipper/Node2D/Hitbox:active")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
@@ -1915,10 +3055,11 @@ script = ExtResource( 3 )
 shape = SubResource( 1 )
 
 [node name="Flipper" type="Node2D" parent="."]
+position = Vector2( 35, 23 )
 
 [node name="Node2D" type="Node2D" parent="Flipper"]
 position = Vector2( 118, 5 )
-scale = Vector2( 0.3, 0.3 )
+scale = Vector2( 0.4, 0.4 )
 
 [node name="Pelvis" type="Sprite" parent="Flipper/Node2D"]
 position = Vector2( -383.5, -47.5 )
@@ -1935,17 +3076,17 @@ texture = ExtResource( 13 )
 offset = Vector2( -8.33334, 130 )
 
 [node name="Shield_Shin" type="Sprite" parent="Flipper/Node2D/Pelvis/Shield_Thigh"]
-position = Vector2( -6.66667, 270 )
+position = Vector2( -6.66653, 263.333 )
 texture = ExtResource( 15 )
 offset = Vector2( 3.33334, 101.667 )
 
 [node name="Shield_Foot" type="Sprite" parent="Flipper/Node2D/Pelvis/Shield_Thigh/Shield_Shin"]
-position = Vector2( 13.3333, 233.333 )
+position = Vector2( 13.3333, 226.667 )
 texture = ExtResource( 11 )
 offset = Vector2( 26.6666, 28.3333 )
 
 [node name="Torso" type="Sprite" parent="Flipper/Node2D/Pelvis"]
-position = Vector2( -13.5001, -45.8333 )
+position = Vector2( -13.5, -45.8333 )
 rotation = 3.14159
 scale = Vector2( 1, -1 )
 texture = ExtResource( 9 )
@@ -1962,38 +3103,38 @@ texture = ExtResource( 20 )
 flip_h = true
 
 [node name="Sword_Upperarm" type="Sprite" parent="Flipper/Node2D/Pelvis/Torso"]
-position = Vector2( -149.838, -319.578 )
+position = Vector2( -150, -323.333 )
 z_index = 2
 texture = ExtResource( 8 )
 offset = Vector2( -40.1667, 75.8334 )
 
 [node name="Sword_Forearm" type="Sprite" parent="Flipper/Node2D/Pelvis/Torso/Sword_Upperarm"]
-position = Vector2( -86.6667, 180 )
+position = Vector2( -80, 180 )
 texture = ExtResource( 4 )
 offset = Vector2( -10.1667, 69.1667 )
 
 [node name="FRONT_HAND_SWORD" type="Sprite" parent="Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm"]
-position = Vector2( -23.3333, 100 )
+position = Vector2( -30, 166.667 )
 texture = ExtResource( 5 )
 offset = Vector2( 170, 53.333 )
 
 [node name="FRONT_HAND_SHEILD" type="Sprite" parent="Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm"]
-position = Vector2( -25.3571, 97.5553 )
+position = Vector2( -150, 180 )
 rotation = 2.73575
 scale = Vector2( 1, -1 )
 texture = ExtResource( 17 )
-offset = Vector2( 31.1665, 119.878 )
+offset = Vector2( -100, 119.878 )
 
 [node name="Shield_upperarm" type="Sprite" parent="Flipper/Node2D/Pelvis/Torso"]
 show_behind_parent = true
-position = Vector2( 86.8286, -289.578 )
+position = Vector2( 96.6667, -296.667 )
 rotation = 0.405822
 z_index = -1
 texture = ExtResource( 7 )
 offset = Vector2( 27.0655, 71.4639 )
 
 [node name="Shield_forearm" type="Sprite" parent="Flipper/Node2D/Pelvis/Torso/Shield_upperarm"]
-position = Vector2( 87.6674, 173.128 )
+position = Vector2( 72.3038, 167.165 )
 rotation = -0.818043
 scale = Vector2( -1, 1 )
 texture = ExtResource( 4 )
@@ -2001,7 +3142,7 @@ offset = Vector2( -5.49371, 62.7999 )
 
 [node name="BACK_HAND_SHIELD" type="Sprite" parent="Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm"]
 show_behind_parent = true
-position = Vector2( -31.2984, 152.117 )
+position = Vector2( -8.45552, 149.184 )
 rotation = 2.18138
 scale = Vector2( 1, -1 )
 texture = ExtResource( 6 )
@@ -2009,46 +3150,46 @@ offset = Vector2( -201.062, -327.076 )
 
 [node name="BACK_HAND_SWORD" type="Sprite" parent="Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm"]
 show_behind_parent = true
-position = Vector2( -20.8005, 151.165 )
+position = Vector2( -42.2479, 160.706 )
 rotation = -0.412221
 texture = ExtResource( 18 )
 offset = Vector2( -176.362, 56.2027 )
 
 [node name="head" type="Sprite" parent="Flipper/Node2D/Pelvis/Torso"]
-position = Vector2( -46.6667, -423.333 )
+position = Vector2( -56.6666, -433.333 )
 texture = ExtResource( 19 )
 offset = Vector2( 33.3333, -40.0002 )
 flip_h = true
 
 [node name="Sword_Thigh" type="Sprite" parent="Flipper/Node2D/Pelvis"]
-position = Vector2( 72.3848, -24.3403 )
+position = Vector2( 67.7766, -32.6865 )
 rotation = 3.02514
 scale = Vector2( 1, -1 )
 texture = ExtResource( 12 )
 offset = Vector2( 19.1865, 153.643 )
 
 [node name="Sword_Shin" type="Sprite" parent="Flipper/Node2D/Pelvis/Sword_Thigh"]
-position = Vector2( 30.3997, 278.184 )
+position = Vector2( 18.0423, 286.698 )
 texture = ExtResource( 14 )
 offset = Vector2( 1.72481, 108.971 )
 
 [node name="Sword_Foot" type="Sprite" parent="Flipper/Node2D/Pelvis/Sword_Thigh/Sword_Shin"]
-position = Vector2( 0.625416, 234.851 )
+position = Vector2( 3.58487, 222.702 )
 texture = ExtResource( 16 )
 offset = Vector2( 25.7866, 37.8603 )
 
-[node name="P_Hitbox" parent="Flipper/Node2D" instance=ExtResource( 2 )]
-visible = false
+[node name="Hitbox" parent="Flipper/Node2D" instance=ExtResource( 2 )]
 position = Vector2( 76.6667, -93.3333 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Flipper/Node2D/P_Hitbox"]
-position = Vector2( -140, 30 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Flipper/Node2D/Hitbox"]
+position = Vector2( -50.0001, -113.333 )
 shape = SubResource( 11 )
 
-[node name="P_Hurtbox" parent="Flipper" instance=ExtResource( 1 )]
+[node name="Hurtbox" parent="Flipper" instance=ExtResource( 1 )]
 visible = false
+monitorable = false
 
-[node name="Hurt" type="CollisionShape2D" parent="Flipper/P_Hurtbox"]
+[node name="Hurt" type="CollisionShape2D" parent="Flipper/Hurtbox"]
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -2066,4 +3207,4 @@ anims/hurt = SubResource( 7 )
 anims/stand = SubResource( 19 )
 anims/walk = SubResource( 18 )
 
-[connection signal="area_entered" from="Flipper/P_Hurtbox" to="." method="_on_P_Hurtbox_area_entered"]
+[connection signal="area_entered" from="Flipper/Hurtbox" to="." method="_on_Hurtbox_area_entered"]

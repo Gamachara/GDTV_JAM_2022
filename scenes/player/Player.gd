@@ -1,6 +1,6 @@
 extends Character
 
-onready var hurtbox = $Flipper/P_Hurtbox
+onready var hurtbox = $Flipper/Hurtbox
 
 onready var front_hand_sword 	= $Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SWORD
 onready var front_hand_shield 	= $Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD
@@ -29,6 +29,7 @@ func _physics_process(delta):
 	else: movevec.x = 0
 	
 	_update_states(delta)
+	_update_player_states()
 	_move(delta)
 	
 	#VISUAL
@@ -53,8 +54,6 @@ func _physics_process(delta):
 		
 	#modulate
 	if stun_clock: modulate = mod_hit_flash
-	elif guarding and guard: modulate = Color.green # testing
-	else: modulate = mod_default
 
 func _take_input() -> void:
 	in_left 	= Input.is_action_pressed('ui_left')
@@ -65,5 +64,30 @@ func _take_input() -> void:
 	in_guard 	= Input.is_action_pressed('ui_guard')
 	in_parry 	= Input.is_action_just_pressed('ui_guard')
 
+func _update_player_states():
+	if !AP: return
+	if anim_lock and AP.is_playing(): return
+	var new_anim := anim
+	
+	if life <= 0: new_anim = "death"
+	elif stun_clock: new_anim = "hurt"
+	elif !is_on_floor(): new_anim = "air"
+	elif taking_input and (in_left or in_right):
+		if guarding: new_anim = "guard_walk"
+		else: new_anim = "walk"
+	elif guarding: new_anim = "guard"
+	elif in_attack:
+		if $Flipper.scale.x < 0: new_anim = "attack_backhand"
+		else: new_anim = "attack_fronthand"
+	else: new_anim = "stand"
+	
+	if anim != new_anim:
+		anim = new_anim
+		AP.play(anim, .2)
+
 func _on_P_Hurtbox_area_entered(area):
 	if !incoming_hitbox: incoming_hitbox = area
+
+
+func _on_Hurtbox_area_entered(area):
+	pass # Replace with function body.

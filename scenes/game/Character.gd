@@ -7,7 +7,6 @@ export (Script) var controller = null
 #onready var controller = load(controller_path)
 
 # Inputs
-# These same variables are used by AI
 var in_left 	:= false
 var in_right 	:= false
 var in_down 	:= false
@@ -18,7 +17,7 @@ var in_parry 	:= false
 
 # Grab default modulation for easy undoing of modulation
 var mod_default : Color = modulate
-var mod_hit_flash : Color = Color.webgray
+var mod_hit_flash : Color = Color.red
 
 var x_dir_mult := 0
 var movevec := Vector2.ZERO
@@ -70,7 +69,7 @@ func _prep_character_for_update(delta : float) -> void:
 	if guard > guard_max: guard = guard_max
 	
 	# Replenish life
-	if life < life_max: life += life_replenlish * delta
+	if life < life_max and life > 0: life += life_replenlish * delta
 	if life > life_max: life = life_max
 	
 	if stun_clock > 0: stun_clock -= delta
@@ -83,11 +82,12 @@ func _physics_process(delta):
 	_prep_character_for_update(delta)
 #	controller.update_behavior(self)
 	_update_states(delta)
-	if incoming_hitbox: _react_to_hit(incoming_hitbox)
+	if incoming_hitbox and incoming_hitbox.get("active"): _react_to_hit(incoming_hitbox)
 	_move(delta)
 
 func _update_states(delta : float):
 	taking_input = !(
+		!life or
 		movevec.x or 
 		anim_lock or
 		stun_clock)
@@ -100,26 +100,7 @@ func _update_states(delta : float):
 		and guard
 		and is_on_floor())
 	
-	if !AP: return
-	if anim_lock and AP.is_playing(): return
-	var new_anim := anim
-	
-	if stun_clock: new_anim = "hurt"
-	elif !is_on_floor(): new_anim = "air"
-	elif taking_input and (in_left or in_right):
-		if guarding: new_anim = "guard_walk"
-		else: new_anim = "walk"
-	elif guarding: new_anim = "guard"
-	elif in_attack:
-		if x_dir_mult > -1: new_anim = "attack_fronthand"
-		if x_dir_mult < 0: new_anim = "attack_backhand"
-		print(x_dir_mult)
-	else: new_anim = "stand"
-	
-	if anim != new_anim:
-		anim = new_anim
-		AP.play(anim, .2)
-#		print(anim)
+
 
 func _move(delta : float)-> void:
 	
@@ -144,7 +125,7 @@ func _move(delta : float)-> void:
 	movevec = move_and_slide(movevec, Vector2.UP)
 
 func _react_to_hit(hit : Area2D):
-	
+	print("bam")
 #	#Check for parry
 #	var is_in_parry_window = hit.get("in_parry_window")
 #	if is_in_parry_window and in_parry and taking_input:
@@ -187,10 +168,20 @@ func _react_to_hit(hit : Area2D):
 	if hit.global_position.x > global_position.x: push *= -1
 	pushvec.x += push
 	
-	incoming_hitbox = null
+#	incoming_hitbox = null
 	
 func _guard_break_feedback() -> void:
 	pass
 
-func _parry_feedback() -> void:
+#func _parry_feedback() -> void:
+#	pass
+	
+func _guarded_hit_feedback() -> void:
 	pass
+
+func _hit_feedback() -> void:
+	pass
+
+func _crit_feedback() -> void:
+	pass
+

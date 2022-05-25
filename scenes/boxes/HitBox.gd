@@ -10,3 +10,4 @@ export (bool) var in_parry_window = false
 
 export (float) var push = 0.0
 
+export (bool) var active = false
