@@ -1,7 +1,5 @@
 extends Character
 
-onready var hurtbox = $Flipper/Hurtbox
-
 onready var front_hand_sword 	= $Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SWORD
 onready var front_hand_shield 	= $Flipper/Node2D/Pelvis/Torso/Sword_Upperarm/Sword_Forearm/FRONT_HAND_SHEILD
 onready var back_hand_sword 	= $Flipper/Node2D/Pelvis/Torso/Shield_upperarm/Shield_forearm/BACK_HAND_SWORD
@@ -18,6 +16,7 @@ func _ready():
 	walk_speed = 250
 	walk_speed_guard = 110
 	jump_speed = -500
+	life_replenlish = 2.0
 
 func _physics_process(delta):
 	_prep_character_for_update(delta)
@@ -27,7 +26,7 @@ func _physics_process(delta):
 	
 	if taking_input: _take_input()
 	else: movevec.x = 0
-	
+	_check_for_hits()
 	_update_states(delta)
 	_update_player_states()
 	_move(delta)
@@ -85,9 +84,3 @@ func _update_player_states():
 		anim = new_anim
 		AP.play(anim, .2)
 
-func _on_P_Hurtbox_area_entered(area):
-	if !incoming_hitbox: incoming_hitbox = area
-
-
-func _on_Hurtbox_area_entered(area):
-	pass # Replace with function body.

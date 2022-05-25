@@ -523,6 +523,18 @@ tracks/40/keys = {
 "update": 1,
 "values": [ false ]
 }
+tracks/41/type = "value"
+tracks/41/path = NodePath("Flipper/Node2D/Hitbox:locked_out")
+tracks/41/interp = 1
+tracks/41/loop_wrap = true
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
 
 [sub_resource type="Animation" id=13]
 resource_name = "air"
@@ -938,6 +950,18 @@ tracks/17/keys = {
 "update": 1,
 "values": [ false, true, false ]
 }
+tracks/18/type = "value"
+tracks/18/path = NodePath("Flipper/Node2D/Hitbox:locked_out")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
 
 [sub_resource type="Animation" id=20]
 resource_name = "attack_fronthand"
@@ -1181,6 +1205,18 @@ tracks/19/keys = {
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
 "values": [ false, true, false ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("Flipper/Node2D/Hitbox:locked_out")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
 }
 
 [sub_resource type="Animation" id=12]
@@ -3180,6 +3216,9 @@ offset = Vector2( 25.7866, 37.8603 )
 
 [node name="Hitbox" parent="Flipper/Node2D" instance=ExtResource( 2 )]
 position = Vector2( 76.6667, -93.3333 )
+damage = 10.0
+guard_break = 5.0
+push = 1000.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Flipper/Node2D/Hitbox"]
 position = Vector2( -50.0001, -113.333 )

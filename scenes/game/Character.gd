@@ -2,6 +2,7 @@ class_name Character
 extends KinematicBody2D
 
 onready var AP = $AnimationPlayer
+onready var Hurtbox = $Flipper/Hurtbox
 
 export (Script) var controller = null
 #onready var controller = load(controller_path)
@@ -30,7 +31,7 @@ export (float) var walk_speed_guard := 75
 export (float) var jump_speed := -800
 
 export (float) var life_max = 100.0
-export (float) var life_replenlish = 2.0
+export (float) var life_replenlish = 0.0
 
 export (float) var guard_damage_reduction = 0.7
 export (float) var guard_push_reduction = 0.4
@@ -51,8 +52,6 @@ var guard : float = guard_max
 var taking_input := true
 var guarding := false
 export (bool) var anim_lock := false
-
-var incoming_hitbox : Area2D = null
 
 func _prep_character_for_update(delta : float) -> void:
 	# Rest inputs
@@ -81,9 +80,18 @@ func _prep_character_for_update(delta : float) -> void:
 func _physics_process(delta):
 	_prep_character_for_update(delta)
 #	controller.update_behavior(self)
+	_check_for_hits()
 	_update_states(delta)
-	if incoming_hitbox and incoming_hitbox.get("active"): _react_to_hit(incoming_hitbox)
+	
 	_move(delta)
+
+func _check_for_hits():
+	var hits = Hurtbox.get_overlapping_areas()
+	for h in hits:
+		if h.get("active") and !h.get("locked_out"):
+			h.set("locked_out", true)
+			_react_to_hit(h)
+	
 
 func _update_states(delta : float):
 	taking_input = !(
@@ -125,7 +133,7 @@ func _move(delta : float)-> void:
 	movevec = move_and_slide(movevec, Vector2.UP)
 
 func _react_to_hit(hit : Area2D):
-	print("bam")
+	
 #	#Check for parry
 #	var is_in_parry_window = hit.get("in_parry_window")
 #	if is_in_parry_window and in_parry and taking_input:
@@ -169,6 +177,9 @@ func _react_to_hit(hit : Area2D):
 	pushvec.x += push
 	
 #	incoming_hitbox = null
+#	incoming_hitbox.set("locked_out", true)
+
+	print(life)
 	
 func _guard_break_feedback() -> void:
 	pass

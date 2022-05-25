@@ -10,5 +10,4 @@ func _update_satan_states(delta: float)->void:
 	pass
 
 
-func _on_Hurtbox_area_entered(area):
-	if !incoming_hitbox: incoming_hitbox = area
+
