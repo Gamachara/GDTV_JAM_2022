@@ -82,5 +82,5 @@ func _update_player_states():
 	
 	if anim != new_anim:
 		anim = new_anim
-		AP.play(anim, .2)
+		AP.play(anim, .15)
 
