@@ -3135,7 +3135,7 @@ visible = false
 position = Vector2( 76.6667, -93.3333 )
 damage = 10.0
 guard_break = 5.0
-push = 1000.0
+push = 5000.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Flipper/Node2D/Hitbox"]
 position = Vector2( -50.0001, -113.333 )

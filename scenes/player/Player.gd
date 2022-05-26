@@ -33,6 +33,7 @@ func _physics_process(delta):
 	
 	#VISUAL
 	#change hands on flip
+	if !rip1: return
 	if $Flipper.scale.x < 0:
 		rip1.show()
 		front_hand_shield.show()

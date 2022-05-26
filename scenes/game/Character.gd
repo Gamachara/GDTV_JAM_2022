@@ -26,6 +26,8 @@ var pushvec := Vector2.ZERO
 
 var anim := "stand"
 
+export (bool) var effected_by_gravity := true
+
 export (float) var walk_speed := 200
 export (float) var walk_speed_guard := 75
 export (float) var jump_speed := -800
@@ -35,6 +37,7 @@ export (float) var life_replenlish = 0.0
 
 export (float) var guard_damage_reduction = 0.7
 export (float) var guard_push_reduction = 0.4
+export (float) var natural_push_reduction = 1.0
 export (float) var guard_max = 100.0
 export (float) var guard_replenlish = 2.0
 
@@ -75,7 +78,7 @@ func _prep_character_for_update(delta : float) -> void:
 	if stun_clock < 0: stun_clock = 0
 	
 	movevec.x = 0
-	movevec.y += (Global.GRAVITY * delta)
+	if effected_by_gravity: movevec.y += (Global.GRAVITY * delta)
 
 func _physics_process(delta):
 	_prep_character_for_update(delta)
@@ -107,11 +110,9 @@ func _update_states(delta : float):
 		and in_guard
 		and guard
 		and is_on_floor())
-	
 
 
 func _move(delta : float)-> void:
-	
 	if taking_input:
 		var adj_speed = walk_speed
 		if guarding: adj_speed = walk_speed_guard
@@ -173,6 +174,7 @@ func _react_to_hit(hit : Area2D):
 	# Be pushed
 	var push = hit.get("push")
 	if guarding: push *= guard_push_reduction
+	else: push *= natural_push_reduction
 	if hit.global_position.x > global_position.x: push *= -1
 	pushvec.x += push
 	
