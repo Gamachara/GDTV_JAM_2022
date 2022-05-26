@@ -1,4 +1,4 @@
-extends Character
+extends Enemy
 
 func _physics_process(delta):
 	_prep_character_for_update(delta)
@@ -8,6 +8,3 @@ func _physics_process(delta):
 	
 func _update_satan_states(delta: float)->void:
 	pass
-
-
-

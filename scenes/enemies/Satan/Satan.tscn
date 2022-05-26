@@ -676,6 +676,7 @@ tracks/3/keys = {
 
 [node name="Satan" type="KinematicBody2D"]
 script = ExtResource( 1 )
+effected_by_gravity = false
 guard_push_reduction = 0.9
 
 [node name="Flipper" type="Node2D" parent="."]
@@ -744,7 +745,7 @@ collide_with_bodies = false
 position = Vector2( -56.6667, 270 )
 shape = SubResource( 6 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Bounds" type="CollisionShape2D" parent="."]
 position = Vector2( 3, 7 )
 shape = SubResource( 1 )
 

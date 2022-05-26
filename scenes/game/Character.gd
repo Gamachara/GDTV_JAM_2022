@@ -3,6 +3,7 @@ extends KinematicBody2D
 
 onready var AP = $AnimationPlayer
 onready var Hurtbox = $Flipper/Hurtbox
+onready var Bounds = $Bounds
 
 export (Script) var controller = null
 #onready var controller = load(controller_path)
@@ -65,6 +66,11 @@ func _prep_character_for_update(delta : float) -> void:
 #	in_attack 	= false
 #	in_guard 	= false
 #	in_parry 	= false
+	
+	if life <= 0: 
+		Bounds.disabled = true
+		movevec = Vector2.ZERO
+		return
 	
 	# Replenish guard
 	if !guarding and guard < guard_max: guard += guard_replenlish * delta
@@ -180,8 +186,6 @@ func _react_to_hit(hit : Area2D):
 	
 #	incoming_hitbox = null
 #	incoming_hitbox.set("locked_out", true)
-
-	print(life)
 	
 func _guard_break_feedback() -> void:
 	pass
