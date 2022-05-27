@@ -7,4 +7,5 @@ func _physics_process(delta):
 	_move(delta)
 	
 func _update_satan_states(delta: float)->void:
-	pass
+	if player_is_to_right(): $Flipper.scale.x = -default_scale
+	else: $Flipper.scale.x = default_scale

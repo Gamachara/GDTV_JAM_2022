@@ -173,8 +173,8 @@ func _react_to_hit(hit : Area2D):
 		
 	# stun
 	var is_crit = hit.get("crit")
-	if is_crit: stun_clock = stun_time
-	else: stun_clock = stun_crit_time
+	if is_crit: stun_clock = stun_crit_time
+	else: stun_clock = stun_time
 	
 	
 	# Be pushed

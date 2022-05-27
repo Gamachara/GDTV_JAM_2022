@@ -4,6 +4,11 @@ extends Character
 var activated := false
 var activation_distance := 700
 
+var default_scale := 1.0
+
+func _ready():
+	default_scale = $Flipper.scale.x
+
 func dist_to_player()-> float:
 	return global_position.distance_to(Global.PLAYER.global_position)
 
