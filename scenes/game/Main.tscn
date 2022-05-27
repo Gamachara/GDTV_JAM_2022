@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/enemies/EyeGuy.tscn" type="PackedScene" id=2]
@@ -8,31 +8,38 @@
 [ext_resource path="res://scenes/enemies/BeakBreaker.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 1816.63, 29 )
+extents = Vector2( 90000, 29 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 10, 547.75 )
 
 [node name="Main" type="Node2D"]
-
-[node name="HUD" parent="." instance=ExtResource( 3 )]
-
-[node name="E_RedGuy" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1818, 862 )
-walk_speed = 150.0
-life_max = 30.0
-
-[node name="Satan" parent="." instance=ExtResource( 4 )]
-position = Vector2( 2233, 425 )
-
-[node name="Enemy" parent="Satan" instance=ExtResource( 6 )]
-position = Vector2( -1049, 417 )
-
-[node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 339, 767 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 1422, 1074 )
+position = Vector2( 1798, 1091 )
 shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -12, 531 )
+shape = SubResource( 2 )
+
+[node name="HUD" parent="." instance=ExtResource( 3 )]
+
+[node name="E_RedGuy" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1801, 824 )
+walk_speed = 150.0
+life_max = 30.0
+
+[node name="E_BeakBreaker" parent="." instance=ExtResource( 6 )]
+position = Vector2( 1201, 959 )
+
+[node name="Satan" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2233, 425 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 347, 824 )
 
 [node name="E_Eye_Guy" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1257, 215 )

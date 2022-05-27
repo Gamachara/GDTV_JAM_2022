@@ -8,8 +8,7 @@ func _physics_process(delta):
 	
 func _update_redguy_states(delta: float)->void:
 	if !activated:
-		var dist = global_position.distance_to(Global.PLAYER.global_position)
-		if dist <= activation_distance: activated = true
+		if dist_to_player() <= activation_distance: activated = true
 		else: return
 	
 	## AI HERE ##

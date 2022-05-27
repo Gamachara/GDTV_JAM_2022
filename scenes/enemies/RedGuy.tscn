@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://scenes/boxes/E_hurtbox.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/boxes/E_hitbox.tscn" type="PackedScene" id=2]
@@ -19,13 +19,16 @@
 [ext_resource path="res://art/enemies/Red_Guy/Right_Limbs/Upper_Arm_Right.png" type="Texture" id=17]
 [ext_resource path="res://scenes/enemies/RedGuy.gd" type="Script" id=18]
 
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 32.0
-height = 416.0
+[sub_resource type="RectangleShape2D" id=15]
+extents = Vector2( 60.75, 229.5 )
 
 [sub_resource type="CapsuleShape2D" id=2]
 radius = 250.833
 height = 453.333
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 32.0
+height = 416.0
 
 [sub_resource type="Animation" id=3]
 length = 0.001
@@ -2906,7 +2909,7 @@ tracks/30/keys = {
 script = ExtResource( 18 )
 
 [node name="Bounds" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
+shape = SubResource( 15 )
 
 [node name="Flipper" type="Node2D" parent="."]
 position = Vector2( 35, 23 )
@@ -3022,13 +3025,11 @@ flip_h = true
 [node name="Hitbox" parent="Flipper/Node2D" instance=ExtResource( 2 )]
 position = Vector2( -464.262, 215.874 )
 rotation = 0.132005
-scale = Vector2( 1, 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Flipper/Node2D/Hitbox"]
 visible = false
 position = Vector2( 356.494, -310.498 )
 rotation = -0.132005
-scale = Vector2( 1, 1 )
 shape = SubResource( 2 )
 
 [node name="Hurtbox" parent="Flipper" instance=ExtResource( 1 )]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://scenes/boxes/P_hurtbox.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/boxes/P_hitbox.tscn" type="PackedScene" id=2]
@@ -21,13 +21,16 @@
 [ext_resource path="res://art/player/skeleton/Head.png" type="Texture" id=19]
 [ext_resource path="res://art/player/skeleton/Shirt_Rip.png" type="Texture" id=20]
 
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 32.0
-height = 416.0
+[sub_resource type="RectangleShape2D" id=21]
+extents = Vector2( 49.5, 233 )
 
 [sub_resource type="CapsuleShape2D" id=11]
 radius = 353.333
 height = 260.0
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 32.0
+height = 416.0
 
 [sub_resource type="Animation" id=17]
 length = 0.001
@@ -3004,7 +3007,7 @@ tracks/36/keys = {
 script = ExtResource( 3 )
 
 [node name="Bounds" type="CollisionShape2D" parent="."]
-shape = SubResource( 1 )
+shape = SubResource( 21 )
 
 [node name="Flipper" type="Node2D" parent="."]
 position = Vector2( 35, 23 )
